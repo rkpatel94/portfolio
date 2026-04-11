@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#6d758c",
+                    "on-tertiary-fixed": "#00363e",
+                    "surface-container-high": "#141f38",
+                    "surface-container": "#0f1930",
+                    "tertiary-dim": "#1ad0eb",
+                    "secondary-container": "#3a485c",
+                    "error-dim": "#d7383b",
+                    "on-secondary-fixed": "#324054",
+                    "on-secondary-container": "#c3d1ea",
+                    "on-tertiary": "#005561",
+                    "on-surface": "#dee5ff",
+                    "on-error-container": "#ffa8a3",
+                    "surface-container-lowest": "#000000",
+                    "background": "#060e20",
+                    "on-error": "#490006",
+                    "on-primary-container": "#002639",
+                    "primary-dim": "#17a8ec",
+                    "primary-fixed-dim": "#17a8ec",
+                    "surface-dim": "#060e20",
+                    "on-primary-fixed-variant": "#003954",
+                    "surface": "#060e20",
+                    "surface-container-highest": "#192540",
+                    "on-tertiary-fixed-variant": "#005561",
+                    "on-secondary": "#455367",
+                    "primary-container": "#1faaef",
+                    "tertiary": "#7de9ff",
+                    "inverse-on-surface": "#4d556b",
+                    "secondary-fixed": "#d5e3fd",
+                    "surface-variant": "#192540",
+                    "on-primary-fixed": "#00121e",
+                    "primary": "#39b8fd",
+                    "outline-variant": "#40485d",
+                    "secondary-fixed-dim": "#c7d5ee",
+                    "secondary": "#d5e3fd",
+                    "surface-bright": "#1f2b49",
+                    "on-tertiary-container": "#004b56",
+                    "surface-tint": "#39b8fd",
+                    "error": "#ff716c",
+                    "error-container": "#9f0519",
+                    "tertiary-fixed-dim": "#1ad0eb",
+                    "on-primary": "#00324a",
+                    "tertiary-container": "#3adffa",
+                    "on-background": "#dee5ff",
+                    "on-surface-variant": "#a3aac4",
+                    "inverse-surface": "#faf8ff",
+                    "primary-fixed": "#34b5fa",
+                    "surface-container-low": "#091328",
+                    "secondary-dim": "#c7d5ee",
+                    "inverse-primary": "#006591",
+                    "on-secondary-fixed-variant": "#4e5c71",
+                    "tertiary-fixed": "#3adffa"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #060e20;
+            color: #dee5ff;
+            font-family: 'Inter', sans-serif;
+        }
+        .blueprint-grid {
+            background-image: radial-gradient(rgba(57, 184, 253, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/70 backdrop-blur-xl shadow-[0px_20px_40px_rgba(57,184,253,0.08)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-bold tracking-tighter text-slate-50 font-['Space_Grotesk']">
+                Architect Portfolio
+            </div>
+<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] tracking-tight">
+<a class="text-slate-400 hover:text-slate-100 transition-colors" href="#">Experience</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors" href="#">Skills</a>
+<a class="text-sky-400 border-b-2 border-sky-500 pb-1" href="#">Projects</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2.5 rounded-full text-slate-400 hover:text-slate-100 transition-colors font-['Space_Grotesk'] font-medium">Resume</button>
+<button class="px-6 py-2.5 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-['Space_Grotesk'] font-bold hover:scale-95 transition-all duration-300">Hire Me</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Section 1: Hero -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden blueprint-grid">
+<div class="max-w-7xl mx-auto px-8 w-full grid md:grid-cols-2 gap-16 items-center py-24">
+<div class="z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary text-xs font-label uppercase tracking-widest mb-6">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        Case Study 01
+                    </div>
+<h1 class="text-6xl md:text-8xl font-headline font-bold tracking-tighter text-on-surface mb-6 leading-[0.9]">
+                        Nebula <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">Dashboard</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed font-body">
+                        A high-performance real-time analytics engine designed for massive scale and millisecond precision.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-headline font-bold text-lg shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                            View Live Site
+                        </button>
+<button class="px-8 py-4 rounded-full border border-outline-variant/30 text-primary font-headline font-bold text-lg hover:bg-surface-container-high transition-colors">
+                            View Source
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-tertiary/20 blur-3xl rounded-full opacity-50 group-hover:opacity-70 transition-opacity"></div>
+<div class="relative rounded-lg overflow-hidden border border-outline-variant/20 shadow-2xl">
+<img alt="Nebula Dashboard UI" class="w-full aspect-video object-cover" data-alt="Professional futuristic dark UI dashboard with complex line charts and data visualizations in neon blue and purple tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3bOLii7ne2Ozv1ebUN2E6XFy95rdYjW22Qn8BzZckUhx5qL7hPvKtaCMDmWVoFWikHCCMO75g_EUT8eKXCed5C9te1KtVhV0J8NQu2gVMIsgVMZIf4KF5szsWPo3mRpMXo6c_sRJtAUIPiUxM3aodDPh8kgXOOO9frXxTjxSDaK6Gruta2rjdAl4r8HHQkxAAyaTb0DWq8sjyt9WCet9tYfnYN8t2nM1l63IrsRx_6R_SzP1ZQdYwD36DsDOKxMGZnPOHv1lXBPw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Project Overview -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-16 md:gap-32">
+<div>
+<div class="text-primary font-label uppercase tracking-widest mb-4">The Challenge</div>
+<h2 class="text-4xl font-headline font-bold text-on-surface mb-6">Building for Real-Time Scale</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                            The primary hurdle was architecting a system capable of processing and visualizing over 10,000 data points per second without UI lag. Existing solutions struggled with garbage collection and DOM reconciliation when dealing with high-frequency WebSocket streams.
+                        </p>
+</div>
+<div>
+<div class="text-tertiary font-label uppercase tracking-widest mb-4">The Solution</div>
+<h2 class="text-4xl font-headline font-bold text-on-surface mb-6">Reactive Data Pipelines</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                            By implementing a custom virtualization layer and offloading data processing to Web Workers, we ensured the main thread remained responsive. Leveraging React's concurrent rendering, Nebula manages complex state transitions with extreme efficiency.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Tech Stack -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-8 text-center">
+<h3 class="text-sm font-label uppercase tracking-[0.3em] text-outline mb-12">Engineered With</h3>
+<div class="flex flex-wrap justify-center gap-4">
+<span class="px-6 py-3 rounded-full bg-surface-container-high border border-outline-variant/20 text-on-surface font-label text-sm flex items-center gap-2 hover:bg-primary/10 hover:border-primary/40 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary"></span> React
+                    </span>
+<span class="px-6 py-3 rounded-full bg-surface-container-high border border-outline-variant/20 text-on-surface font-label text-sm flex items-center gap-2 hover:bg-primary/10 hover:border-primary/40 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Next.js
+                    </span>
+<span class="px-6 py-3 rounded-full bg-surface-container-high border border-outline-variant/20 text-on-surface font-label text-sm flex items-center gap-2 hover:bg-primary/10 hover:border-primary/40 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary"></span> TypeScript
+                    </span>
+<span class="px-6 py-3 rounded-full bg-surface-container-high border border-outline-variant/20 text-on-surface font-label text-sm flex items-center gap-2 hover:bg-primary/10 hover:border-primary/40 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Tailwind CSS
+                    </span>
+<span class="px-6 py-3 rounded-full bg-surface-container-high border border-outline-variant/20 text-on-surface font-label text-sm flex items-center gap-2 hover:bg-primary/10 hover:border-primary/40 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Framer Motion
+                    </span>
+<span class="px-6 py-3 rounded-full bg-surface-container-high border border-outline-variant/20 text-on-surface font-label text-sm flex items-center gap-2 hover:bg-primary/10 hover:border-primary/40 transition-all cursor-default">
+<span class="w-2 h-2 rounded-full bg-primary"></span> WebSocket API
+                    </span>
+</div>
+</div>
+</section>
+<!-- Section 4: Gallery -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-8 group overflow-hidden rounded-lg border border-outline-variant/10">
+<img alt="Data Visualization" class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Wide shot of a dark mode analytics dashboard showing multi-colored line graphs and radial progress bars" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8RCkrWoDqtG8OJTKoUL1y5vNAY-gXVSdSZYtYcutWK-u_zKty2aFQblpKaoYBfKaTEiC9RyoXrSNlGGwMjk3KsU-1suAm3hObtcBPc-yjGy5mgoczCmOH_bu13c7DCNVzgGNI4BDw5FnrD84Tqyte_9x-Uw4nRunfHwrf7GSHzRJMDrRccZjIVT5UZ561PbELk03WAzvgfCTVpCab8nemoG8qUM69LWnm5BFNfsIYUETc-1uQlsmu5xxqWCHfO15MuYdQTHioErs"/>
+</div>
+<div class="md:col-span-4 grid gap-8">
+<div class="group overflow-hidden rounded-lg border border-outline-variant/10">
+<img alt="Mobile View" class="w-full h-[234px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern mobile smartphone displaying a responsive dashboard UI with clean data cards and a sidebar menu" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJvqOf4KAIZy2rKqk-NW66kJzPL2WRf4ewVd2mC8GhGnkB9hU8xVGDRmdQOQwQzPkLTzdQIpYk9-9IG1PIYfBIp9WmlkWRkIMc32-zje8u2n_xXDIY7ZuiuHc54_Rppfpo-ZsKeB3iBneKJBxl7H24UeTTSuuSSd3G5X8_IdqIp5U2rWG4wRNCgtpODyPY6184e1G18OI667e9ptNl3NMEYaPN52PprVszfgbbdQLTaWkNJJ-GRNPAJWPWUItXIk04bJbpulIuATg"/>
+</div>
+<div class="group overflow-hidden rounded-lg border border-outline-variant/10">
+<img alt="Code Structure" class="w-full h-[234px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Macro close-up of clean React TypeScript code on a high-resolution monitor with subtle syntax highlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvYFkNmP7UL7Gqqzadvej-DmfwZh8oCBPIWH85ARZaIbMxgLNzvqcDItY-X1-au43zuaBVPnnzjFnSz03npI7IEUOu0FV8WFT1d864WHaq0hexLBuGdlTBAlvBZ2DJMYv5GzmJdobm3GUmtRql3P9AIXB6PthA55sMgNGwNBeLCSTucFSkcv1-loRo80kBB_jT36-uDvlgLs-m5THgmzGfjvvlQxANxxAzTeaKemvm61UAf3Z0VCh5tNeqpfTl25Dhw3qcADy2UeE"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Key Features -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="text-5xl font-headline font-bold text-on-surface mb-4">Core Capabilities</h2>
+<p class="text-on-surface-variant max-w-md">Precision-engineered features that define the Nebula experience.</p>
+</div>
+<div class="h-px flex-1 bg-outline-variant/20 mx-8 hidden md:block"></div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-8 rounded-lg bg-surface-container-high border border-outline-variant/10 hover:border-primary/30 transition-colors">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined" data-icon="speed">speed</span>
+</div>
+<h4 class="text-xl font-headline font-bold text-on-surface mb-3">Real-time updates</h4>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed">Sub-100ms latency on data stream visualization using specialized WebSocket handlers.</p>
+</div>
+<div class="p-8 rounded-lg bg-surface-container-high border border-outline-variant/10 hover:border-primary/30 transition-colors">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined" data-icon="monitoring">monitoring</span>
+</div>
+<h4 class="text-xl font-headline font-bold text-on-surface mb-3">Custom charting engine</h4>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed">Built from scratch using Canvas API for maximum performance and artistic control.</p>
+</div>
+<div class="p-8 rounded-lg bg-surface-container-high border border-outline-variant/10 hover:border-primary/30 transition-colors">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined" data-icon="memory">memory</span>
+</div>
+<h4 class="text-xl font-headline font-bold text-on-surface mb-3">High-performance</h4>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed">Optimized data processing using Web Workers to prevent main-thread blocking.</p>
+</div>
+<div class="p-8 rounded-lg bg-surface-container-high border border-outline-variant/10 hover:border-primary/30 transition-colors">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined" data-icon="devices">devices</span>
+</div>
+<h4 class="text-xl font-headline font-bold text-on-surface mb-3">Responsive design</h4>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed">Seamless experience across ultra-wide monitors and mobile devices.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-800/50 bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-8 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-black text-slate-200 font-['Inter'] mb-2">Architect Portfolio</div>
+<div class="text-slate-500 font-['Inter'] text-sm uppercase tracking-widest">© 2024 Senior React Lead Architect. Built with Precision.</div>
+</div>
+<div class="flex gap-12 font-['Inter'] text-sm uppercase tracking-widest">
+<a class="text-slate-500 hover:text-slate-100 transition-colors duration-300" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-slate-100 transition-colors duration-300" href="#">GitHub</a>
+<a class="text-slate-500 hover:text-slate-100 transition-colors duration-300" href="#">Source Code</a>
+</div>
+</div>
+</footer>
+</body></html>
