@@ -1,35 +1,8 @@
 import { Link } from "react-router";
+import { getFeaturedProjects } from "../data/projects";
 
 export function ProjectsList() {
-  const projects = [
-    {
-      id: "nebula-dashboard",
-      title: "Nebula Dashboard",
-      tags: ["Next.js 14", "Prisma"],
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAHAVgUc2y0MT-l7r53WmMhlDiIvVY8QXa6MZZndSacbSaGoO8FChjqVEPQGS7SB6U-ppJT86sK2ifQpLLdgcuHiBX7eTlhtIZ1yyDUtASNa9BI4VS59Or75FwMkxWHqJZBT-MKAbUik6PHa3Vqv4OCj36k-4ybdMuk3jt8lavGlpSNVj_mV1Q5MGlqHHCPUrs_JN52OwJ4-0pdB4qsK2lGp5efF_Q5MfKkH4nHSzAfdiQ8Wc1thXMJs57NEiMR33HMyrX8B6IOX2E",
-      description:
-        "A real-time analytics engine for decentralized finance protocols with sub-second latency updates.",
-    },
-    {
-      id: "zenith-mobile",
-      title: "Zenith Mobile",
-      tags: ["React Native", "Firebase"],
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAJzSYW13ZmzUln-JIP8Ib40vhXSkzJ2nJfxtgPc5BQh360bNKhWmi21FJAR6qU7AcrQ_pQakeHg0ZtF9X1akFKYmWjrVNBH1yMMVK1Ir82IXyQQ7_Nlypyq6NDqSjR4Nj6laNGJjo3ROCnWgeYM90brxMzDGK5OcMIqg0Dc2tb43iaf0kUD-Wrg2EnYYXY3i2UrF9VgPma-P1y5Mhia_Ye8PhH7lh5NIph5FHZrlKoEmF5nXoqiYi_cZ95Ow4Y0GeYnarZvDB1MAg",
-      description:
-        "High-performance React Native application for wellness tracking with integrated health-kit sync.",
-    },
-    {
-      id: "aether-immersive",
-      title: "Aether Immersive",
-      tags: ["React Three Fiber", "WebGL"],
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuDycw-z-kF_PA0hy9T4yIBGVYikZyW2CTw6pRhAma7SmcpYO_QR-BJ47utrqQuO3C1yR2F_kkitak0Y5MP10eXADqFRwtPdFUu9b3EG30XNM2Qxv1N2sEzq6hPEaFgADA2gKlHwmob10f5pArtZIA33h8XI_nWPVmrq3cUx3rTmi2_oIyeR2GxiK2jhgQdE_FRJxhxGBGljq2AXvJiU0W8SS42ocZFDueRsIYFFoQhlXNNIuOi2LR6YggwbqJXCgeMm2JZ7E8Ws02w",
-      description:
-        "A 3D configurator for architectural firms built with Three.js and custom shader materials.",
-    },
-  ];
+  const projects = getFeaturedProjects();
 
   return (
     <section className="py-24 px-8" id="projects">

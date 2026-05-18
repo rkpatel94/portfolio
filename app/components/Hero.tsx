@@ -1,5 +1,3 @@
-import { Link } from "react-router";
-
 export function Hero() {
   return (
     <section className="relative pt-40 pb-24 px-8 overflow-hidden">
@@ -11,7 +9,7 @@ export function Hero() {
           <span className="font-label text-primary-fixed tracking-widest uppercase text-sm font-semibold mb-4 block animate-fade-in-up">
             6.5+ Years of Engineering Excellence
           </span>
-          <h1 className="font-headline text-5xl md:text-8xl font-bold text-on-background leading-[1.1] mb-8 tracking-tighter animate-fade-in-up delay-100">
+          <h1 className="font-headline text-4xl sm:text-5xl md:text-8xl font-bold text-on-background leading-[1.1] mb-8 tracking-tighter animate-fade-in-up delay-100">
             Team Lead <br />
             <span className="text-primary">React JS Developer</span>
           </h1>

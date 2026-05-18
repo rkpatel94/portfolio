@@ -77,7 +77,7 @@ export function Contact() {
                 rows={4}
               ></textarea>
             </div>
-            <button className="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold py-4 rounded-full shadow-lg shadow-primary/20 hover:opacity-90 transition-all hover:scale-[1.01] active:scale-[0.99] cursor-pointer">
+            <button className="w-full bg-gradient-to-r from-primary to-accent text-on-accent font-bold py-4 rounded-full shadow-lg shadow-accent/20 hover:opacity-90 transition-all hover:scale-[1.01] active:scale-[0.99] cursor-pointer">
               Send Message
             </button>
           </form>

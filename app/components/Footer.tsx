@@ -6,7 +6,7 @@ export function Footer() {
           Rajkumar Patel
         </div>
         <p className="font-body text-sm uppercase tracking-widest text-slate-500 text-center">
-          © 2024 Team Lead React JS Developer. Built with Precision.
+          © {new Date().getFullYear()} Team Lead React JS Developer. Built with Precision.
         </p>
         <div className="flex gap-8 mt-8 md:mt-0 font-body text-sm uppercase tracking-widest">
           <a

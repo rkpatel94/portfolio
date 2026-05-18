@@ -69,6 +69,12 @@
   --color-on-error: #490006;
   --color-on-error-container: #ffa8a3;
 
+  /* Warm accent — used sparingly on hero CTAs to differentiate from the cyan field */
+  --color-accent: #fbbf24;
+  --color-accent-dim: #d97706;
+  --color-accent-container: #f59e0b;
+  --color-on-accent: #1c1300;
+
   --color-inverse-surface: #faf8ff;
   --color-inverse-on-surface: #4d556b;
   --color-inverse-primary: #006591;
