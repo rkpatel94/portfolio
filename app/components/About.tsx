@@ -15,17 +15,20 @@ export function About() {
             <span className="text-primary-dim">Enterprise Solutions</span>
           </h2>
           <p className="font-body text-on-surface-variant leading-relaxed text-lg">
-            As a Team Lead with over 6.5 years of experience in the React ecosystem,
-            I have successfully architected and delivered more than 20 live projects.
-            My expertise lies in translating complex business requirements into high-performance, 
-            maintainable front-end architectures that drive user engagement and business growth.
+            As a Team Lead with 6.5+ years in the React ecosystem, I have
+            architected and delivered 20+ live projects across the modern
+            stack &mdash; React 18/19, Next.js, and the state and data layers
+            that hold up at scale. My focus is translating ambiguous product
+            requirements into front-end architectures that remain
+            maintainable as teams and codebases grow.
           </p>
           <p className="font-body text-on-surface-variant leading-relaxed text-lg">
-            I lead with a focus on engineering excellence, technical mentorship, 
-            and the implementation of robust design systems. By fostering a 
-            collaborative environment and prioritizing clean, scalable code, 
-            I ensure that development teams consistently deliver value at speed 
-            without compromising on quality.
+            I lead through structured code review, technical mentorship, and
+            a strong testing culture &mdash; the everyday practices that
+            compound over time. Sprint planning, hiring, and roadmap shaping
+            are part of the role, but what I care about most is helping
+            engineers grow into stronger reviewers, architects, and
+            decision-makers.
           </p>
         </div>
 
